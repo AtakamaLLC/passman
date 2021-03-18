@@ -1,0 +1,2 @@
+language = "bash"
+run = "PYTHONPATH=. python passman/__main__.py pwds"

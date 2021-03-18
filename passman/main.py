@@ -64,7 +64,7 @@ class MainWindow(tk.Frame):
 
         if path not in self.memo:
             with open(path) as fh:
-                data = yaml.safe_load(fh)
+                data = yaml.safe_load(fh) or {}
             self.memo[path] = data
         else:
             data = self.memo[path]
